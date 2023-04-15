@@ -8,7 +8,7 @@
 
 * {
   font-family: Roboto, Lato, Helvetica, Arial, sans-serif;
-  font-size: clamp(10px, 3vh, 16px);
+  font-size: 1em;
   color: var(--color4);
   background-color: var(--color0);
 }
