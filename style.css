@@ -1,0 +1,64 @@
+:root {
+  --color0: #111111;
+  --color1: #222222;
+  --color2: #444444;
+  --color3: #666666;
+  --color4: #EEEEEE;
+}
+
+* {
+  font-family: Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-size: clamp(10px, 3vh, 16px);
+  color: var(--color4);
+  background-color: var(--color0);
+}
+
+html, body {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  gap: 5px;
+}
+
+div.tubes {
+  flex-grow: 1;
+  justify-self: stretch;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-flow: row;
+  place-content: stretch;
+  place-items: stretch;
+  gap: 20px;
+  padding: 25px;
+}
+
+span.tube {
+  border: 5px solid var(--color2);
+  background-color: var(--color1);
+}
+
+button.new {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button.new:hover {
+  filter: brightness(2.0);
+}
+
+span.log {
+  padding: 5px;
+  color: var(--color3);
+}
